@@ -43,7 +43,13 @@
     margin: 0 auto 2rem;
   }
   .about-containers {
-    margin-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .details-container {
+    flex: 0 1 calc(50% - 20px); 
+    margin: 10px;
   }
 }
 
@@ -66,7 +72,12 @@
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-container {
+    flex: 0 1 90%; 
+    margin: 10px auto; 
   }
   .contact-info-container {
     margin: 0;
